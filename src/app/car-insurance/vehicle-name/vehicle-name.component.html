@@ -1,0 +1,63 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-5">
+            <app-car-detail></app-car-detail>
+        </div>
+        <div class="col-md-7 border p-2">
+            <!-- select Make -->
+            <div class="container" *ngIf="currentstep == 1">
+                <h1>Select Make</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolorem inventore, perferendis,
+                    repudiandae sapiente dolores quis porro blanditiis nihil fugiat consequatur qui, asperiores facilis.
+                    Ipsam minus aliquam aliquid officia in dignissimos qui quis velit, tempora fugiat veritatis
+                    voluptatum accusantium, commodi iure, possimus quae ad mollitia! Quis unde repellat, fugit sunt
+                    incidunt placeat dolorum neque quos optio animi praesentium voluptate ut nobis velit omnis harum
+                    perferendis. Laborum magni architecto voluptate aliquid ab suscipit ut corrupti eius illo excepturi
+                    aperiam iusto necessitatibus assumenda quibusdam in repudiandae perspiciatis facilis asperiores
+                    ratione explicabo rerum id, porro, cupiditate quis. Iure nobis a optio voluptas officia!</p>
+            </div>
+
+            <!-- Select Model -->
+            <div class="container" *ngIf="currentstep == 2">
+                <h1>Select Model</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestiae illum, ipsum tenetur officiis
+                    rem. Itaque eos, perferendis consectetur provident cum est, explicabo mollitia totam, necessitatibus
+                    possimus quod! Praesentium, tempore id magnam architecto reiciendis optio quasi at magni atque harum
+                    iure totam sapiente tenetur quis et illo animi provident laudantium, vero suscipit deserunt qui quos
+                    beatae vitae. Excepturi, nam sit perspiciatis rerum earum harum ratione facilis optio debitis quam
+                    error velit nemo unde quos iusto possimus. Voluptatibus illum architecto itaque? Fugiat quis
+                    exercitationem fuga sapiente numquam recusandae eaque voluptatem laboriosam ratione perferendis
+                    quod, autem amet quisquam rerum dolores, commodi hic!</p>
+            </div>
+        <div class="container" *ngIf="currentstep == 3">
+            <h1>select varient</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea cumque voluptas harum a necessitatibus quasi officiis fugiat, in suscipit fugit vero voluptatem est! Sequi, quidem! Blanditiis aperiam id ab aut rem cupiditate quis, debitis, quidem porro animi natus alias possimus ipsa itaque ullam eos tempora temporibus reprehenderit fugiat numquam veniam iusto quaerat quas inventore. Accusamus nihil sit quisquam obcaecati placeat omnis doloremque porro vero quas necessitatibus iure rem quae minima iste mollitia, consequatur voluptate. Quisquam fuga, consectetur deleniti magni recusandae animi obcaecati ut odio vel perspiciatis doloribus, in veniam sequi, ullam maxime perferendis dignissimos dicta! Aspernatur mollitia laboriosam maxime magnam.</p>
+        </div>
+      <div class="p-2 m-1">
+            <button type="button" class="btn btn-secondary "*ngIf="currentstep > 1" (click)="Previousstep()">Previous</button> 
+        <button type="button" class="btn btn-primary mx-1" *ngIf= "currentstep < 3"(click)="nextstep()">Next</button>
+        <button type="button" class="btn btn-info mx-1" *ngIf= "currentstep == 3">Next</button>
+
+
+      </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- select Variant -->
